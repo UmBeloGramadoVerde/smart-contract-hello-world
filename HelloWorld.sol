@@ -12,10 +12,10 @@ contract HelloWorld {
 
    // Similar to many class-based object-oriented languages, a constructor is a special function that is only executed upon contract creation.
    // Constructors are used to initialize the contract's data. Learn more:https://solidity.readthedocs.io/en/v0.5.10/contracts.html#constructors
-   constructor(string memory initMessage) {
+   constructor() {
 
-      // Accepts a string argument `initMessage` and sets the value into the contract's `message` storage variable).
-      message = initMessage;
+      // Sets the value "Initial Message" into the contract's `message` storage variable).
+      message = "Initial Message";
    }
 
    // A public function that accepts a string argument and updates the `message` storage variable.
